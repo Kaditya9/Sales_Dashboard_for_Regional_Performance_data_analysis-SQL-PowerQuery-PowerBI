@@ -22,6 +22,25 @@ The goal of this project is to simulate a corporate-grade end-to-end data analyt
 
 ✅ Report and Presentation: Write a clear project report summarizing your key findings and business recommendations. Prepare a presentation that visually communicates insights and actionable recommendations to stakeholders.
 
+✅ Business Problem Statement
+
+   BMW’s global sales data (2018–2025) is dispersed across multiple sources, making it difficult for leadership to track performance trends, measure EV adoption, and compare regional market share. This lack of    consolidated insights hinders timely decision-making, resource allocation, and strategic planning in a highly competitive premium automotive market.
+
+✅ Problems
+The absence of a consolidated analytics platform creates several challenges:
+- Performance Tracking Gaps – Difficulty in identifying global and regional sales trends.
+- EV Adoption Measurement – Limited visibility into electric vehicle penetration across markets.
+- Regional Market Share Comparison – Inconsistent data prevents accurate benchmarking of regions.
+- Strategic Planning Limitations – Leadership lacks timely insights for resource allocation and competitive positioning.
+
+✅ Impact
+Without integrated insights, BMW risks:
+- Slower response to market shifts and consumer demand.
+- Inefficient allocation of resources across regions.
+- Missed opportunities in accelerating EV adoption.
+- Reduced competitiveness in the premium automotive sector.
+
+
 
 
 🔎 Steps
