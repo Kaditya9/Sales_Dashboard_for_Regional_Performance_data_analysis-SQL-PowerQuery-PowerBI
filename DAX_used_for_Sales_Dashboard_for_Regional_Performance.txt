@@ -1,0 +1,30 @@
+
+Total Revenue = sum('BMW Sales'[Revenue_EUR])
+Total units Sold = sum('BMW Sales'[Units_Sold])
+Avg Price = AVERAGE('BMW Sales'[Avg_Price_EUR])
+Avg BEV = AVERAGE('BMW Sales'[BEV_Share])
+Avg Premium Share = AVERAGE('BMW Sales'[Premium_Share])
+
+Modelling 
+Imp Values = {
+    ("Total Revenue", NAMEOF('_Measure'[Total Revenue]), 0),
+    ("Total units Sold", NAMEOF('_Measure'[Total units Sold]), 1),
+    ("Avg Price", NAMEOF('_Measure'[Avg Price]), 2),
+    ("Avg BEV", NAMEOF('_Measure'[Avg BEV]), 3),
+    ("Avg Premium Share", NAMEOF('_Measure'[Avg Premium Share]), 4)
+}
+
+
+Previous Year Sales = CALCULATE([Total Revenue],
+FILTER(ALL('BMW Sales'),
+'BMW Sales'[Year]=MAX('BMW Sales'[Year])-1))
+
+YoY%=DIVIDE([Total Revenue]-[Previous Year Sales],[Previous Year Sales])
+
+
+
+Previous Month Sales = CALCULATE([Total Revenue],
+FILTER(ALL('BMW Sales'),
+'BMW Sales'[Month]=MAX('BMW Sales'[Month])-1))
+
+MoM% = DIVIDE([Total Revenue]-[Previous Month Sales],[Previous Month Sales])
